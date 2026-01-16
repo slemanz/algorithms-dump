@@ -46,3 +46,33 @@ int fact(int n)
         return n*fact(n - 1);
 }
 ```
+
+## Tail recursion
+
+A form of recursion for which compilers are able to generate optimized code.
+Most modern compilers recognize tail recursion. Therefore, we should make use of
+it whenever we can.
+
+A recursive function is said to be tail recursive if all recursive calls within it are tail
+recursive. A recursive call is tail recursive when it is the last statement that will be
+executed within the body of a function and its return value is not a part of an
+expression. Tail-recursive functions are characterized as having nothing to do dur-
+ing the unwinding phase. T
+
+Example: 
+
+```C
+#include "facttail.h"
+
+int facttail(int n, int a);
+{
+    if (n < 0)
+        return 0;
+    else if (n == 0)
+        return 1;
+    else if (n == 1)
+        return a;
+    else
+        return n*facttail(n - 1, n*a);
+}
+```
