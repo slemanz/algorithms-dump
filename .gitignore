@@ -1,0 +1,6 @@
+# object files
+*.o
+
+# final files
+list_usage
+list_usage.exe

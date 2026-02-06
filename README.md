@@ -62,6 +62,6 @@ also be easy to recognize.
 
 ## Topics
 
-- **[Recursion](recursion/README.md)**
-- **[Analysis of Algorithms](analysis/README.md)**
-- Linked Lists
+- **[Recursion](recursion)**
+- **[Analysis of Algorithms](analysis)**
+- **[Linked Lists](linked-list)**
